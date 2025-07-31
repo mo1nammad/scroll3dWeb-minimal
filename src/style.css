@@ -1,0 +1,49 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body,
+html {
+  width: 100%;
+  height: 100%;
+  background-color: #1e1a20;
+}
+
+canvas {
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  inset: 0;
+}
+
+#app {
+  color: #ee82ee;
+  position: relative;
+  z-index: 100;
+}
+
+#app .text-container {
+  height: 100vh;
+  position: relative;
+}
+
+#app .text-container p {
+  font-family: "Courier New", Courier, monospace;
+  font-weight: 600;
+  font-size: 5rem;
+  position: absolute;
+  margin-left: 80px;
+  top: 300px;
+}
+
+#app .text-container:nth-child(even) p {
+  top: unset;
+  height: fit-content;
+  bottom: 400px;
+  margin-left: unset;
+  right: 80px;
+  color: aqua;
+}
